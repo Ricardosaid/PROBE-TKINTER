@@ -6,22 +6,14 @@ class App():
         self.frame = Frame(master, height =100 , width = 100)
         self.frame.propagate(0)
         self.frame.pack()
-        self.button = Button(self.frame, text = "QUI", fg = "RED", command = self.frame.quit)
+        self.button = Button(self.frame, text = "QUI", fg = "RED", command = self.frame.quit, compound = CENTER)
         self.button.pack(fill=BOTH, expand = 1)
-        self.button.pack(side = RIGHT)
 
-        self.hi_there = Button(self.frame, text = "HELLO",fg = "green", command = self.say_hi)
+        self.hi_there = Button(self.frame, text = "HELLO",fg = "green", command = self.say_hi, compound = CENTER)
         self.hi_there.pack(fill=BOTH, expand = 1)
-        self.hi_there.pack(side = LEFT)
 
-        self.butoon = Button(self.frame, text = "OK", command = self.callback)
+        self.butoon = Button(self.frame, text = "OK", command = self.callback,compound = CENTER)
         self.butoon.pack(fill = BOTH, expand = 1)
-        self.butoon.pack(side = TOP)
-
-        self.other_button = Button(self.frame, text = "NOMBRE DEL USARIO DEL SERVICIIO DE MEXICO", anchor = W, justify = LEFT, padx = 2)
-        self.other_button.pack(fill = BOTH, expand = 2)
-        self.other_button.config(relief = RAISED)
-        #self.butoon.pack(side = RIGHT)
 
     def say_hi(self):
         print("Hi there, everyone")

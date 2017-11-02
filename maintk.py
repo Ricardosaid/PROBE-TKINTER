@@ -17,6 +17,10 @@ class App():
         self.butoon = Button(self.frame, text = "OK", command = self.callback)
         self.butoon.pack(fill = BOTH, expand = 1)
         self.butoon.pack(side = TOP)
+
+        self.other_button = Button(self.frame, text = "NOMBRE DEL USARIO DEL SERVICIIO DE MEXICO", anchor = W, justify = LEFT, padx = 2)
+        self.other_button.pack(fill = BOTH, expand = 2)
+        self.other_button.config(relief = RAISED)
         #self.butoon.pack(side = RIGHT)
 
     def say_hi(self):

@@ -8,6 +8,8 @@ class App():
         self.frame.pack()
         self.button = Button(self.frame, text = "QUI", fg = "RED", command = self.frame.quit, compound = CENTER)
         self.button.pack(fill=BOTH, expand = 1)
+        self.button.config(bg = "red", command = self.callback, compound = RIGHT, font = "Algerian", fg = "yellow")
+
 
         self.hi_there = Button(self.frame, text = "HELLO",fg = "green", command = self.say_hi, compound = CENTER)
         self.hi_there.pack(fill=BOTH, expand = 1)
